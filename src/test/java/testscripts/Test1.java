@@ -8,7 +8,7 @@ import genericLibraries.BaseClass;
 public class Test1 extends BaseClass{
 
 	@Test
-	public void test1() {
+	public void test1() throws InterruptedException {
 		SoftAssert soft = new SoftAssert();
 		
 		home.clickGearsTab();
@@ -24,6 +24,7 @@ public class Test1 extends BaseClass{
 		selenium.clickAddToCart();
 		
 		web.handleAlert("OK");
+		Thread.sleep(2000);
 		soft.assertEquals(selenium.getItemAddedMessage(),"Item added to cart");
 		
 		soft.assertAll();
