@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import genericLibraries.BaseClass;
-
+//Skillrary app test case 1
 public class Test1 extends BaseClass{
 
 	@Test
